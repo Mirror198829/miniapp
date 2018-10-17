@@ -13,10 +13,28 @@
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#1296db",
     "navigationBarTitleText": "miniapp demo",
-    "navigationBarTextStyle": "black",
+    "navigationBarTextStyle": "light",
     "enablePullDownRefresh": true
   },
-  "debug":true
+  "debug": true,
+  "tabBar": {
+    "color":"#4a4a4a",
+    "selectedColor":"#1296db",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath":"pages/index/index",
+        "iconPath":"images/icon/home.png",
+        "selectedIconPath":"images/icon/home.png"
+      },
+      {
+        "text":"测试",
+        "pagePath":"pages/test/test",
+        "iconPath":"images/icon/test.png",
+        "selectedIconPath":"images/icon/test.png"
+      }
+    ]
+  }
 }
