@@ -12,7 +12,7 @@
 |window|页面的窗口表现|
 |tabBar|底部tab切换|
 |networkTimeout||
-|debug|是否是debug模式|
+|debug|debug模式|
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
