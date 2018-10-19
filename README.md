@@ -42,6 +42,9 @@ App({
 })
 ```
 ## Page生命周期
+tab页之间的切换，不会让页面重新加载，也就不会卸载，只会隐藏与显示  
+在进行Navigator，跳转到那个目标页面会加载（load），跳转之前的页面会被隐藏，而不是卸载  
+回退NavigatorBack,目标页面会show，不是load，回退之前的页面会被卸载
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)

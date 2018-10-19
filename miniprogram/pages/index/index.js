@@ -9,8 +9,9 @@ Page({
     takeSession: false,
     requestResult: ''
   },
-
+  //页面加载的时候执行，只会执行一次
   onLoad: function() {
+    console.log('IndexPage onLoad')
     if (!wx.cloud) {
       wx.redirectTo({
         url: '../chooseLib/chooseLib',
@@ -35,7 +36,22 @@ Page({
       }
     })
   },
-
+  //页面第一次渲染完成之后，只会执行一次
+  onReady(){
+    console.log(`IndexPage onReady`)
+  },
+  //页面显示就会执行
+  onShow(){
+    console.log('IndexPage onShow')
+  },
+  //页面隐藏就会执行
+  onHide(){
+    console.log('IndexPage onHide')
+  },
+  //页面卸载的时候执行
+  onUnload(){
+    console.log(`IndexPage onUnload`)
+  },
   onGetUserInfo: function(e) {
     if (!this.logged && e.detail.userInfo) {
       this.setData({
@@ -45,7 +61,6 @@ Page({
       })
     }
   },
-
   onGetOpenid: function() {
     // 调用云函数
     wx.cloud.callFunction({
